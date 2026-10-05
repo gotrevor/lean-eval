@@ -1,0 +1,13 @@
+id = "baker_harman_pintz"
+title = "Primes in short intervals (Baker–Harman–Pintz, θ = 21/40)"
+group = "formalization-evaluation"
+status = "draft"
+visible = true
+statement_revision = 1
+tags = []
+module = "LeanEval.NumberTheory.BakerHarmanPintz"
+holes = ["baker_harman_pintz"]
+submitter = "Trevor Morris"
+notes = "Baker–Harman–Pintz: there is `d₀ > 0` such that for all large `x` the interval `[x, x + x^(21/40)]` contains at least `d₀ · x^(21/40) / log x` primes, where `primesIn a b` counts primes in the real interval `[a, b]`. In particular every interval `[x, x + x^0.525]` with `x` large contains a prime. Stated in the counting form quoted by Saito (2024, Theorem 2.1), which uses it to prove Mills' constant irrational. mathlib has the Chebyshev bounds and Bertrand's postulate, but no zero-density estimates and no Harman sieve."
+source = "R. C. Baker, G. Harman, J. Pintz, The difference between consecutive primes. II, Proc. London Math. Soc. (3) 83 (2001), 532–562, p. 562. https://doi.org/10.1112/plms/83.3.532. Counting form as quoted in K. Saito, Mills' constant is irrational (2024), Theorem 2.1, https://arxiv.org/abs/2404.19461."
+informal_solution = "Baker–Harman–Pintz combine Harman's sieve with mean-value and zero-density estimates for Dirichlet polynomials and the Riemann zeta function to give a lower bound of the right order for the number of primes in `[x, x + x^0.525]`. See also G. Harman, Prime-Detecting Sieves, Princeton University Press (2007)."
